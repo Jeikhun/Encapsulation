@@ -9,7 +9,24 @@ namespace Encapsulation
     internal class User
     {
         private string _password;
-        public string Username { get; set; }
+        private string _username;
+        public string Username {
+            get
+            {
+                return _username;
+            }
+            set
+            {
+                if(value == null || value.Length<3 || value.Length>15 || string.IsNullOrWhiteSpace(value))
+                {
+                    Console.WriteLine("Duzgun Username daxil edin");
+                }
+                else
+                {
+                    _username = value;
+                }
+            } 
+        }
         public string Password {
             get
             {
