@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Encapsulation
 {
@@ -8,11 +8,9 @@ namespace Encapsulation
         {
             Console.WriteLine("Istifadechi adi: ");
             string name = Console.ReadLine();
-            Password:
             Console.WriteLine("Shifre: ");
             string password = Console.ReadLine();
             User newuser = new User(name, password);
-            Console.WriteLine(newuser.Password);
 
         }
     }
